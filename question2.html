@@ -19,7 +19,7 @@
       />
     </div>
     <div class="center">
-      <button onclick="remaining()">اختبر 🤓</button>
+      <button onclick="randomNum() ">اختبر 🤓</button>
     </div>
     <script>
       // قم بإنشاء الدالة هنا
@@ -48,6 +48,16 @@
     }
 
 
+    
+
+    function randomNum() 
+              {
+               
+                let x = Math.floor((Math.random() * 10) + 1);
+                document.getElementById("numberType").innerHTML = x;
+                          }
+
+        
 
 
     </script>
