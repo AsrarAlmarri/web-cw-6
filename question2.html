@@ -9,17 +9,29 @@
   <body>
     <!-- السؤال الثاني -->
     <h2 id="numberType"></h2>
-    <div class="center">
+    <br>
+    <h2 id= "random"></h2>
+
+
+     <!-- <div class="center">
       <input
         dir="rtl"
         type="text"
-        placeholder="أدخل العدد"
+        placeholder= "ادخل العدد"
         id="height"
         style="text-align: center; font-size: 1rem; margin: 0.4rem"
-      />
+      />  -->
+
+
     </div>
+    <br>
+    <br>
+    <br>
+    <br>
     <div class="center">
-      <button onclick="randomNum() ">اختبر 🤓</button>
+     
+
+      <button onclick="remaining() ">اختبر 🤓</button>
     </div>
     <script>
       // قم بإنشاء الدالة هنا
@@ -29,35 +41,27 @@
       function remaining()
       {
 
-        let x = document.getElementById(`height`).value;
+        let x = Math.floor((Math.random() * 10) + 1);
+                document.getElementById("random").innerHTML = x;
         
 
       if(x %2==0 )
       {
 
-      document.getElementById(`numberType`).innerText = "is even";
+      document.getElementById(`numberType`).innerText = " is even";
 
 
       }
 
       else
       {
-        document.getElementById(`numberType`).innerText = "is odd";
+        document.getElementById(`numberType`).innerText = "   is odd";
 
       }
     }
 
 
-    
-
-    function randomNum() 
-              {
-               
-                let x = Math.floor((Math.random() * 10) + 1);
-                document.getElementById("numberType").innerHTML = x;
-                          }
-
-        
+  
 
 
     </script>
