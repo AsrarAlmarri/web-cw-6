@@ -31,13 +31,22 @@
         </select>
       </div>
       <div class="center">
-        <button onclick="">احسب</button>
+        <button onclick="randomNum()">احسب</button>
       </div>
       <div class="center">
         <h3 id="newAmount">0</h3>
+    
+      
       </div>
     </div>
-
+        <br>
+     <br>
+     <br>
+       <div>
+        <!-- <h3 id="random">0</h3>
+           <button onclick="randomNum()">click for random integer number</button>
+         </div> -->
+         
     <!-- أولاً: قم بفتح هذه الصفحة في المتصفح لتأخذ فكرة بسيطة عن التمرين -->
 
     <!-- script داخل وسم changeCurr() اسمها function ثانياً: قم بإنشاء دالة أو -->
@@ -50,10 +59,56 @@
     <script>
       // عرف الدالة
       {
-        let amount = document.getElementById("amount").value;
-        let sel = document.getElementById("country-list");
-        let country = sel.value;
-        let newAmount = 0;
+        // function changecurr()
+        // {
+        // let amount = document.getElementById("amount").value;
+        // let sel = document.getElementById("country-list");
+        // let country = sel.value;
+        // let newAmount = 0;
+
+      
+          //   if (country=="USA")
+          //   {
+          //     newAmount = amount*3.27
+
+          //   }
+          //   else if (country == "England")
+          //   {
+          //     newAmount=amount*2.52
+                 
+          //   }
+
+          //     else if(country == "UAE")
+          //     {
+          //       newAmount= amount*12.01
+                 
+          //     }
+
+          //     else if(country == "Turkey")
+          //     {
+          //       newAmount= amount*24.68
+                 
+          //     }
+            
+          //     document.getElementById("newAmount").innerHTML = newAmount
+              
+              
+              
+              
+
+          // }
+
+
+
+          function randomNum() 
+              {
+               
+                let x = Math.floor((Math.random() * 10) + 1);
+                document.getElementById("newAmount").innerHTML = x;
+                          }
+
+        }
+
         // country قم باستخدام الجمل الشرطية المناسبة لاختبار قيمة المتغير
         // USA هي county مثال: إن كانت قيمة
         // من الدينار الكويتي إلى الدولار الأمريكي amount قم بتحويل المبلغ
@@ -64,7 +119,7 @@
           UAE        amount * 12.01
           Turkey     amount * 24.68
         */
-      }
+      
     </script>
   </body>
 </html>
